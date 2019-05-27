@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/bga_banner"
+            style="@style/BannerDefaultStyle"
+            app:banner_indicatorGravity="bottom|right"
+            app:banner_isNeedShowIndicatorOnOnlyOnePage="true"
+            app:banner_isNumberIndicator="true"
+            app:banner_numberIndicatorBackground="@drawable/shape_number_indicator_background"
+            app:banner_numberIndicatorTextColor="@android:color/white"
+            app:banner_numberIndicatorTextSize="10sp"
+            app:banner_pointAutoPlayAble="true"
+            app:banner_pointContainerBackground="@android:color/transparent"
+            app:banner_transitionEffect="defaultEffect"
+            app:banner_aspectRatio="2.8" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_meizi"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
